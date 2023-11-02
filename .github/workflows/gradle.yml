@@ -72,7 +72,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         aws deploy create-deployment \
-        --application-name game-moa-gateway \
+        --application-name game-moa \
         --deployment-group-name game-moa-gateway-group \
         --file-exists-behavior OVERWRITE \
         --region ${{ secrets.REGION }} \
